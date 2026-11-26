@@ -28,9 +28,9 @@ export const LIVE_COHORTS_DATA: CohortCourse[] = [
     tag: 'New Live Cohort',
     isNew: true,
     isLive: true,
-    title: 'AI-Powered Performance Marketing Bootcamp',
+    title: 'Professional Data Analystics with AI Program',
     description: 'A practical, live bootcamp covering Google Ads, Meta Ads, GTM, GA4, CAPI and AI automation, with hands-on projects in every module.',
-    image: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/Pw1HNperformancemarketing5.jpg',
+    image: 'data-analytics.jpeg',
     schedule: 'Mon · Wed · Fri',
     scheduleTime: '8–10 PM IST',
     sessionsCount: '30 live sessions',
@@ -47,7 +47,7 @@ export const LIVE_COHORTS_DATA: CohortCourse[] = [
     brandColor: '#3B3BD0',
   },
   {
-    id: 'ga4-live-mastery',
+    id: 'Master Data Science Program',
     slug: 'master-google-analytics-4-live-cohort',
     tag: 'Live · Cohort 1',
     isNew: false,
@@ -55,7 +55,7 @@ export const LIVE_COHORTS_DATA: CohortCourse[] = [
     startDate: '23 Oct 2026',
     title: 'GA4 Live Mastery Program',
     description: 'A practical, live GA4 program built on real agency data, from foundations to advanced tracking, with hands-on practice every session.',
-    image: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/5thOXdownload.jpg',
+    image: 'data-science.jpeg',
     schedule: 'Mon · Wed · Fri',
     scheduleTime: '8:30 – 10:00 PM IST',
     sessionsCount: '20 live sessions',
@@ -102,7 +102,7 @@ export const FLAGSHIP_COURSES_DATA: FlagshipCourse[] = [
 
 export const SPECIAL_OFFER_DATA = {
   badge: 'Special Offer',
-  title: 'Become Full Stack Digital Marketer',
+  title: 'Master Full Stack AI Program',
   points: [
     '🎯 8 Courses in 1 – Exclusive Digital Marketing Bundle',
     '🚀 Become a Full Stack Digital Marketer',
@@ -110,7 +110,7 @@ export const SPECIAL_OFFER_DATA = {
     '💬 WhatsApp Support Included',
     '📈 All Courses by Actual Founders & Experts in Industry',
   ],
-  image: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/w6FDi7coursesin1bundle1.jpg',
+  image: 'web-development.jpeg',
   ctaText: 'Enrol Now',
   ctaLink: '#',
 };
@@ -118,9 +118,9 @@ export const SPECIAL_OFFER_DATA = {
 export const BUNDLES_DATA: BundleCourse[] = [
   {
     id: 'special-bundle',
-    title: 'Special Bundle',
+    title: 'Master Basic Digital Marketing',
     slug: 'special-bundle-offer',
-    image: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/i0xei5ibfxlimitedtimeoffer11.jpg',
+    image: 'basic-digital-marketing.jpeg',
     description: 'Agency-level Google Ads and advanced conversion tracking, combined.',
     tags: ['Agency certification', '2 courses + checklist'],
     items: [
@@ -133,9 +133,9 @@ export const BUNDLES_DATA: BundleCourse[] = [
   },
   {
     id: 'performance-stack',
-    title: 'The Performance Stack (4 in 1)',
+    title: 'Master Advance Digital Marketing',
     slug: 'the-performance-stack',
-    image: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/oDZMgtheperformancestack.jpg',
+    image: 'adv-digital-marketing.jpeg',
     description: 'Build the complete skill set required to run campaigns, track every important action, and create landing pages that convert.',
     tags: ['Agency certification', '3 courses + checklist'],
     items: [

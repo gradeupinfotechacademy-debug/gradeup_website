@@ -19,7 +19,7 @@ export default function BundleSection({
               {/* Top Image Dropzone */}
               <div className="relative aspect-[3/2] w-full bg-[#e5e7ec] overflow-hidden">
                 <img
-                  src={bundle.image}
+                  src={"assets/"+bundle.image}
                   alt={bundle.title}
                   className="w-full h-full object-cover"
                 />

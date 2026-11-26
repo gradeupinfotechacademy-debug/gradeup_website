@@ -31,7 +31,7 @@ export default function HomePage() {
       <BundleSection />
 
       {/* 6. All Courses Grid */}
-      <AllCoursesSection />
+      {/* <AllCoursesSection /> */}
 
       {/* 7. UTDM Advantages (Numbered Dotted Path) */}
       <AdvantagesSection />
@@ -43,7 +43,7 @@ export default function HomePage() {
       {/* <CertificationSection /> */}
 
       {/* 10. Faculty & Mentors */}
-      <FacultySection />
+      {/* <FacultySection /> */}
 
       {/* 11. Frequently Asked Questions */}
       {/* <FaqSection /> */}

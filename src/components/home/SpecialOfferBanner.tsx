@@ -49,7 +49,7 @@ export default function SpecialOfferBanner({
           <div className="lg:w-1/2 w-full flex justify-center">
             <Link href="#" className="block w-full max-w-lg overflow-hidden rounded-3xl shadow-xl hover:scale-102 transition-transform duration-300">
               <img
-                src={image}
+                src={"assets/"+image}
                 alt={title}
                 className="w-full h-auto object-cover rounded-3xl"
               />

@@ -35,7 +35,7 @@ export default function LiveCohortsSection({
             {/* Banner Media */}
             <div className="lg:w-7/12 relative bg-[#e8590c] overflow-hidden flex items-center justify-center min-h-[300px]">
               <img
-                src={bootcamp.image}
+                src={"assets/"+bootcamp.image}
                 alt={bootcamp.title}
                 className="w-full h-full object-cover"
               />
@@ -146,7 +146,7 @@ export default function LiveCohortsSection({
             {/* Media */}
             <div className="lg:w-7/12 relative aspect-[3/2] bg-[#0d1030] overflow-hidden">
               <img
-                src={ga4.image}
+                src={"assets/"+ga4.image}
                 alt={ga4.title}
                 className="w-full h-full object-cover"
               />
