@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 import fs from "fs";
 import path from "path";
 
-// Remove app_logo.avif route handler folder so static /app_logo.avif from public/ is used
+// Remove logo.png route handler folder so static /logo.png from public/ is used
 try {
-  const routeFolder = path.join(process.cwd(), "src", "app", "app_logo.avif");
+  const routeFolder = path.join(process.cwd(), "src", "app", "logo.png");
   if (fs.existsSync(routeFolder)) {
     fs.rmSync(routeFolder, { recursive: true, force: true });
   }
@@ -16,7 +16,7 @@ try {
 try {
   const publicDir = path.join(process.cwd(), "public");
   const rawLogo = path.join(publicDir, "app_logo");
-  const avifLogo = path.join(publicDir, "app_logo.avif");
+  const avifLogo = path.join(publicDir, "logo.png");
   if (fs.existsSync(rawLogo) && !fs.existsSync(avifLogo)) {
     fs.copyFileSync(rawLogo, avifLogo);
   }
@@ -40,11 +40,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/favicon.ico",
-        destination: process.env.NEXT_PUBLIC_APP_LOGO || "/app_logo.avif",
+        destination: process.env.NEXT_PUBLIC_APP_LOGO || "/logo.png",
       },
       {
         source: "/app_logo",
-        destination: "/app_logo.avif",
+        destination: "/logo.png",
       },
     ];
   },

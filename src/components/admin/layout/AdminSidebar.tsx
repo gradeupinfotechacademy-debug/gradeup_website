@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { siteConfig } from '@/config/siteConfig';
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { siteConfig } from "@/config/siteConfig";
 import {
   LayoutDashboard,
   GraduationCap,
@@ -14,50 +14,53 @@ import {
   Settings,
   ExternalLink,
   PlusCircle,
-} from '@/components/admin/common/AdminIcons';
+} from "@/components/admin/common/AdminIcons";
 
 interface AdminSidebarProps {
   isMobileOpen: boolean;
   onCloseMobile: () => void;
 }
 
-export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSidebarProps) {
+export default function AdminSidebar({
+  isMobileOpen,
+  onCloseMobile,
+}: AdminSidebarProps) {
   const pathname = usePathname();
 
   const navItems = [
     {
-      name: 'Dashboard',
-      href: '/admin/dashboard',
+      name: "Dashboard",
+      href: "/admin/dashboard",
       icon: LayoutDashboard,
     },
     {
-      name: 'Courses & Products',
-      href: '/admin/products',
+      name: "Courses & Products",
+      href: "/admin/products",
       icon: GraduationCap,
     },
     {
-      name: 'Categories',
-      href: '/admin/categories',
+      name: "Categories",
+      href: "/admin/categories",
       icon: FolderTree,
     },
     {
-      name: 'Articles & Blogs',
-      href: '/admin/blogs',
+      name: "Articles & Blogs",
+      href: "/admin/blogs",
       icon: FileText,
     },
     {
-      name: 'Learners & Clients',
-      href: '/admin/clients',
+      name: "Learners & Clients",
+      href: "/admin/clients",
       icon: Users,
     },
     {
-      name: 'Admins & Staff',
-      href: '/admin/users',
+      name: "Admins & Staff",
+      href: "/admin/users",
       icon: ShieldCheck,
     },
     {
-      name: 'Settings',
-      href: '/admin/settings',
+      name: "Settings",
+      href: "/admin/settings",
       icon: Settings,
     },
   ];
@@ -72,13 +75,17 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
           className="flex items-center gap-2.5 font-bold text-white tracking-wide"
         >
           <img
-            src="/app_logo.avif"
+            src="/logo.png"
             alt="Gradeup"
             className="w-8 h-8 object-contain rounded-lg"
           />
           <div>
-            <span className="block text-sm font-bold text-white leading-tight">Gradeup</span>
-            <span className="block text-[11px] font-medium text-slate-400">Admin Control</span>
+            <span className="block text-sm font-bold text-white leading-tight">
+              Gradeup
+            </span>
+            <span className="block text-[11px] font-medium text-slate-400">
+              Admin Control
+            </span>
           </div>
         </Link>
       </div>
@@ -101,19 +108,25 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
           Management
         </div>
         {navItems.map((item) => {
-          const isActive = pathname === item.href || (item.href !== '/admin/dashboard' && pathname?.startsWith(item.href));
+          const isActive =
+            pathname === item.href ||
+            (item.href !== "/admin/dashboard" &&
+              pathname?.startsWith(item.href));
           const Icon = item.icon;
           return (
             <Link
               key={item.name}
               href={item.href}
               onClick={isMobile ? onCloseMobile : undefined}
-              className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-xs font-semibold transition-colors ${isActive
-                ? 'bg-blue-600/15 text-blue-400 border border-blue-500/30'
-                : 'text-slate-400 hover:bg-slate-800/60 hover:text-white'
-                }`}
+              className={`flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-xs font-semibold transition-colors ${
+                isActive
+                  ? "bg-blue-600/15 text-blue-400 border border-blue-500/30"
+                  : "text-slate-400 hover:bg-slate-800/60 hover:text-white"
+              }`}
             >
-              <Icon className={`w-4 h-4 ${isActive ? 'text-blue-400' : 'text-slate-400'}`} />
+              <Icon
+                className={`w-4 h-4 ${isActive ? "text-blue-400" : "text-slate-400"}`}
+              />
               <span>{item.name}</span>
             </Link>
           );
@@ -131,7 +144,9 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
             <ExternalLink className="w-4 h-4 text-slate-400" />
             <span>View Public Site</span>
           </span>
-          <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">Live</span>
+          <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">
+            Live
+          </span>
         </Link>
       </nav>
 
@@ -159,8 +174,9 @@ export default function AdminSidebar({ isMobileOpen, onCloseMobile }: AdminSideb
 
       {/* Mobile Drawer */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 transform transition-transform duration-200 ease-in-out md:hidden ${isMobileOpen ? 'translate-x-0' : '-translate-x-full'
-          }`}
+        className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 transform transition-transform duration-200 ease-in-out md:hidden ${
+          isMobileOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
         {sidebarContent(true)}
       </aside>
