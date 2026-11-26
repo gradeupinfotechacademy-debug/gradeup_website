@@ -34,7 +34,7 @@ export default function HomePage() {
       {/* <AllCoursesSection /> */}
 
       {/* 7. UTDM Advantages (Numbered Dotted Path) */}
-      <AdvantagesSection />
+      {/* <AdvantagesSection /> */}
 
       {/* 8. Alumni Students (Placements & Packages) */}
       {/* <AlumniSection /> */}

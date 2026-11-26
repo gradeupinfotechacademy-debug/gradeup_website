@@ -47,13 +47,13 @@ export const LIVE_COHORTS_DATA: CohortCourse[] = [
     brandColor: '#3B3BD0',
   },
   {
-    id: 'Master Data Science Program',
+    id: 'master-data-cience-rogram',
     slug: 'master-google-analytics-4-live-cohort',
     tag: 'Live · Cohort 1',
     isNew: false,
     isLive: true,
     startDate: '23 Oct 2026',
-    title: 'GA4 Live Mastery Program',
+    title: 'Master Data Science Program',
     description: 'A practical, live GA4 program built on real agency data, from foundations to advanced tracking, with hands-on practice every session.',
     image: 'data-science.jpeg',
     schedule: 'Mon · Wed · Fri',
@@ -118,7 +118,7 @@ export const SPECIAL_OFFER_DATA = {
 export const BUNDLES_DATA: BundleCourse[] = [
   {
     id: 'special-bundle',
-    title: 'Master Basic Digital Marketing',
+    title: 'Basic Digital Marketing',
     slug: 'special-bundle-offer',
     image: 'basic-digital-marketing.jpeg',
     description: 'Agency-level Google Ads and advanced conversion tracking, combined.',
@@ -133,7 +133,7 @@ export const BUNDLES_DATA: BundleCourse[] = [
   },
   {
     id: 'performance-stack',
-    title: 'Master Advance Digital Marketing',
+    title: 'Master Digital Marketing',
     slug: 'the-performance-stack',
     image: 'adv-digital-marketing.jpeg',
     description: 'Build the complete skill set required to run campaigns, track every important action, and create landing pages that convert.',

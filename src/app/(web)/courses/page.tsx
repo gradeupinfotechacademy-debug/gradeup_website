@@ -14,7 +14,7 @@ export default function CoursesPage() {
   return (
     <>
       <PageHeader
-        title="All Programs & Courses"
+        title="All IT & Animation Courses"
         subtitle="Master Performance Marketing, Advanced Tracking, Google Ads, and AI with practical agency experience."
         breadcrumbs={[
           { label: 'Home', href: '/' },
