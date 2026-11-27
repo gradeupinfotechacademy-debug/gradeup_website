@@ -1,29 +1,15 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import { ContactSectionProps } from '@/types/courseTypes';
 import { CONTACT_DATA } from '@/data/courseData';
+import ContactForm from '@/components/home/ContactForm';
 
 export default function ContactSection({
   contactInfo = CONTACT_DATA,
 }: ContactSectionProps) {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
   return (
     <section id="contact" className="py-16 bg-[#f5f5ff]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#3c4dc9] tracking-tight">
@@ -35,72 +21,7 @@ export default function ContactSection({
         </div>
 
         {/* Form Container */}
-        <div className="bg-white rounded-2xl p-6 sm:p-10 shadow-lg border border-slate-200 mb-16">
-          {submitted ? (
-            <div className="text-center py-10">
-              <div className="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                ✓
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900">Thank you for reaching out!</h3>
-              <p className="text-slate-600 mt-2">We have received your message and will get back to you shortly.</p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Enter Name..."
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3.5 bg-white border-2 border-[#3c4dc9] text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#3c4dc9]/30 rounded-md text-sm"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    required
-                    placeholder="Enter Email..."
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3.5 bg-white border-2 border-[#3c4dc9] text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#3c4dc9]/30 rounded-md text-sm"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    required
-                    placeholder="Enter Phone..."
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3.5 bg-white border-2 border-[#3c4dc9] text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#3c4dc9]/30 rounded-md text-sm"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <textarea
-                  required
-                  rows={4}
-                  placeholder="Enter Your Message..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3.5 bg-white border-2 border-[#3c4dc9] text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#3c4dc9]/30 rounded-md text-sm"
-                />
-              </div>
-
-              <div className="text-center pt-2">
-                <button
-                  type="submit"
-                  className="bg-[#3c4dc9] hover:bg-[#2b37a8] text-white font-semibold text-base px-12 py-3 rounded-md shadow-md transition-all duration-200"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          )}
-        </div>
+        <ContactForm className="mb-16" />
 
         {/* 3 Contact Info Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

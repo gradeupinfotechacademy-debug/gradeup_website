@@ -11,12 +11,14 @@ import CertificationSection from '@/components/home/CertificationSection';
 import FacultySection from '@/components/home/FacultySection';
 import FaqSection from '@/components/home/FaqSection';
 import ContactSection from '@/components/home/ContactSection';
+import HeroBanner2 from '@/components/home/HeroBanner2';
+import ContactForm2 from '@/components/home/ContactForm2';
 
 export default function HomePage() {
   return (
     <div className="w-full flex flex-col">
       {/* 1. Hero Banner */}
-      <HeroBanner />
+      <HeroBanner2 />
 
       {/* 2. Live Cohorts Section */}
       <LiveCohortsSection />
@@ -49,7 +51,7 @@ export default function HomePage() {
       {/* <FaqSection /> */}
 
       {/* 12. Connect With Us / Contact Form */}
-      <ContactSection />
+      <ContactForm2 className="mb-16" />
     </div>
   );
 }

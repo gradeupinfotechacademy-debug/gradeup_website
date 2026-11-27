@@ -5,6 +5,30 @@ export interface HeroBannerData {
   linkHref?: string;
 }
 
+export interface HeroBanner2Stat {
+  value: string;
+  label: string;
+  accent?: boolean;
+}
+
+export interface HeroBanner2Data {
+  badgeBrand: string;
+  badgeRating: string;
+  headlineWhiteStart: string;
+  headlineRedHighlight: string;
+  headlineRedPrefix: string;
+  headlineWhiteEnd: string;
+  descriptionPrefix: string;
+  descriptionHighlight: string;
+  descriptionSuffix: string;
+  stats: HeroBanner2Stat[];
+  primaryCtaText: string;
+  primaryCtaHref: string;
+  secondaryCtaText: string;
+  secondaryCtaHref: string;
+  backgroundImage: string;
+}
+
 export interface CohortCourse {
   id: string;
   slug: string;
@@ -139,6 +163,10 @@ export interface HeroBannerProps {
   data?: HeroBannerData;
 }
 
+export interface HeroBanner2Props {
+  data?: HeroBanner2Data;
+}
+
 export interface LiveCohortsSectionProps {
   cohorts?: CohortCourse[];
 }
@@ -188,6 +216,34 @@ export interface FaqSectionProps {
 
 export interface ContactSectionProps {
   contactInfo?: ContactInfo;
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+export interface ContactFormProps {
+  className?: string;
+  onSubmitSuccess?: (data: ContactFormData) => void;
+}
+
+export interface ContactForm2Data {
+  fullName: string;
+  email: string;
+  phone: string;
+  course: string;
+  message: string;
+}
+
+export interface ContactForm2Props {
+  title?: string;
+  subtitle?: string;
+  courses?: string[];
+  className?: string;
+  onSubmitSuccess?: (data: ContactForm2Data) => void;
 }
 
 /* Courses Directory & Filtering Interfaces */

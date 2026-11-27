@@ -1,5 +1,6 @@
 import {
   HeroBannerData,
+  HeroBanner2Data,
   CohortCourse,
   FlagshipCourse,
   BundleCourse,
@@ -19,6 +20,31 @@ export const HERO_BANNER_DATA: HeroBannerData = {
   mobileImage: 'https://d502jbuhuh9wk.cloudfront.net/orgData/655de673e4b0ab5485148ea9/pages/assets/images/website hero banner mobile view.jpg',
   altText: 'Umar Tazkeer Digital Marketing Courses & Cohorts',
   linkHref: '#live-cohorts',
+};
+
+export const HERO_BANNER_2_DATA: HeroBanner2Data = {
+  badgeBrand: 'Gradeup Infotech Academy',
+  badgeRating: '4.9/5 Student Rating',
+  headlineWhiteStart: 'Best',
+  headlineRedHighlight: 'Data Science Course',
+  headlineRedPrefix: 'in',
+  headlineWhiteEnd: 'Ghaziabad',
+  descriptionPrefix:
+    'Join our Microsoft Certified Industry Experts and master high-demand tools like ',
+  descriptionHighlight:
+    'Machine Learning, Deep Learning, Neural Networks, Python, R, & SQL.',
+  descriptionSuffix:
+    ' Get 100% placement assistance in Noida, Delhi, and Gurugram.',
+  stats: [
+    { value: '100%', label: 'PRACTICAL LABS', accent: true },
+    { value: '20+', label: 'INDUSTRY PROJECTS', accent: false },
+    { value: '360°', label: 'PLACEMENT SUPPORT', accent: false },
+  ],
+  primaryCtaText: 'Explore Syllabus',
+  primaryCtaHref: '#live-cohorts',
+  secondaryCtaText: 'Speak to Counselor',
+  secondaryCtaHref: '#contact',
+  backgroundImage: '/assets/hero-earth-bg.jpg',
 };
 
 export const LIVE_COHORTS_DATA: CohortCourse[] = [
@@ -557,6 +583,15 @@ export const CONTACT_DATA: ContactInfo = {
   phoneNumbers: ['+919721410786', '+919455076758'],
   email: 'info@umartazkeer.com',
 };
+
+export const CONTACT_FORM_2_COURSES: string[] = [
+  'Best Data Science Course',
+  'Professional Data Analytics with AI Program',
+  'Master Full Stack AI Program',
+  'Basic Digital Marketing',
+  'Master Digital Marketing',
+  'Web Development',
+];
 
 export function getAllCourseSlugs(): string[] {
   const slugs = new Set<string>();
