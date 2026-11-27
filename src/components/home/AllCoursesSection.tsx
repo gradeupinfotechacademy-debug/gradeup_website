@@ -16,7 +16,7 @@ export default function AllCoursesSection({
             All <span className="text-[#3c4dc9]">Courses</span>
           </h2>
           <p className="mt-2 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-            From beginner foundations to advanced mastery. Access every program designed to help you grow in digital marketing
+            From Data Science and AI to Cloud, Security, Full Stack, and Career Communication—explore every Gradeup program built for real-world outcomes.
           </p>
         </div>
 

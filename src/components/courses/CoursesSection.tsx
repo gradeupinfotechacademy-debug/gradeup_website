@@ -54,23 +54,17 @@ export default function CoursesSection({
 
   // Extract dynamic instructors list
   const instructorsList: CourseInstructorItem[] = useMemo(() => {
-    const rawInstructors = [
-      'Umar Tazkeer',
-      'Sahil Sir',
-      'Ankur Sir',
-      'Shiva Sir',
-      'Aditya',
-    ];
+    const rawInstructors = Array.from(
+      new Set(courses.map((c) => c.instructor || '').filter(Boolean))
+    );
 
-    return rawInstructors
-      .map((inst) => ({
-        label: inst,
-        value: inst,
-        count: courses.filter((c) =>
-          (c.instructor || '').toLowerCase().includes(inst.toLowerCase())
-        ).length,
-      }))
-      .filter((inst) => inst.count > 0);
+    return rawInstructors.map((inst) => ({
+      label: inst,
+      value: inst,
+      count: courses.filter(
+        (c) => (c.instructor || '').toLowerCase() === inst.toLowerCase()
+      ).length,
+    }));
   }, [courses]);
 
   const handleSelectCategory = (category: string) => {

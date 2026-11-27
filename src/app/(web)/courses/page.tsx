@@ -5,17 +5,17 @@ import CoursesSection from '@/components/courses/CoursesSection';
 import Spinner from '@/components/ui/Spinner';
 
 export const metadata: Metadata = {
-  title: 'All Courses & Programs | Umar Tazkeer Digital Academy',
+  title: 'All Courses & Programs | Gradeup Infotech Academy',
   description:
-    'Browse high-impact digital marketing bootcamps, Google Ads 2025, GA4, tracking mastery, and AI automation courses taught by Umar Tazkeer and industry experts.',
+    'Explore Gradeup Infotech Academy courses in Data Analytics, Data Science, Full Stack Development, Digital Marketing, Gen AI, Agentic AI, Cloud Computing, Cyber Security, and English Speaking & PD.',
 };
 
 export default function CoursesPage() {
   return (
     <>
       <PageHeader
-        title="All IT & Animation Courses"
-        subtitle="Master Performance Marketing, Advanced Tracking, Google Ads, and AI with practical agency experience."
+        title="All Gradeup Courses"
+        subtitle="Master Data Science, AI, Full Stack Development, Cloud, Cyber Security, Digital Marketing, and Communication with industry experts."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Courses', href: '/courses' },

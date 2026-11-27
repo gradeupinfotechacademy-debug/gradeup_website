@@ -33,7 +33,7 @@ export default function CourseSidebarFeatured({
                   />
                 ) : (
                   <div className="h-full w-full bg-blue-900/60 flex items-center justify-center text-white text-[10px] font-bold">
-                    UT
+                    GU
                   </div>
                 )}
                 {item.tag && (
