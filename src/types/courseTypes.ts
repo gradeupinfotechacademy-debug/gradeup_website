@@ -18,6 +18,7 @@ export interface HeroBanner2Data {
   headlineRedHighlight: string;
   headlineRedPrefix: string;
   headlineWhiteEnd: string;
+  description: string;
   descriptionPrefix: string;
   descriptionHighlight: string;
   descriptionSuffix: string;

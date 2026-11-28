@@ -85,11 +85,7 @@ export default function HeroBanner2({
 
             {/* Description */}
             <p className="text-base sm:text-[17px] text-slate-300 leading-relaxed max-w-xl mb-8">
-              {data.descriptionPrefix}
-              <strong className="text-white font-semibold">
-                {data.descriptionHighlight}
-              </strong>
-              {data.descriptionSuffix}
+              {data.description}
             </p>
 
             {/* Key Metrics / Feature Cards */}

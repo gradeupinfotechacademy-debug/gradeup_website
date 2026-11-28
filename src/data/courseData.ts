@@ -25,10 +25,11 @@ export const HERO_BANNER_DATA: HeroBannerData = {
 export const HERO_BANNER_2_DATA: HeroBanner2Data = {
   badgeBrand: 'Gradeup Infotech Academy',
   badgeRating: '4.9/5 Student Rating',
-  headlineWhiteStart: 'Best',
-  headlineRedHighlight: 'Data Science Course',
-  headlineRedPrefix: 'in',
-  headlineWhiteEnd: 'Ghaziabad',
+  headlineWhiteStart: 'Master Industry-Ready Skills.Get Hired By',
+  headlineRedHighlight: 'Top Tech Giants.',
+  headlineRedPrefix: '',
+  headlineWhiteEnd: '',
+  description:'Ghaziabad’s #1 career-transformation academy. Learn Data Analytics, Full Stack Web Development, Data Science, AI & Digital Marketing with 80% practical lab coding and 100% placement support across Delhi-NCR.',
   descriptionPrefix:
     'Join our Microsoft Certified Industry Experts and master high-demand tools like ',
   descriptionHighlight:
